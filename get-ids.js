@@ -1,8 +1,7 @@
 const mongoose = require('mongoose');
 require('dotenv').config();
 
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://admin:s3fMvveIg3iA4OZX@ecommerce-db.unpuix1.mongodb.net/ecommercedb?appName=ecommerce-db';
-
+const MONGODB_URI = process.env.MONGODB_URI;
 async function getIds() {
   try {
     console.log('\n🔍 Fetching IDs from Database...\n');
